@@ -35,7 +35,7 @@ const MotoDetails = () => {
         message.error("Moto não encontrada!", 4);
       }
     });
-  }, []);
+  }, [id]);
 
   async function editMoto() {
     console.log("Registrando moto...");
