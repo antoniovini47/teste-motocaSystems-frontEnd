@@ -3,6 +3,7 @@
 ## 📄 Como executar
 
 -Basta clonar o repositório na sua máquina, rodar um "npm ci" e depois "npm run dev" na raiz do projeto;
+
 -A aplicação também está disponível online em https://test-motoca-frontend.web.app/
 
 ## 📄 Etapas da Implementação
