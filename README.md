@@ -1,5 +1,13 @@
 # 📝 Teste Motoca Systems - Desenvolvedor Front-End
 
+## 📄 Etapas da Implementação
+
+- 13/06/2024 - Implementações iniciais:
+    + Criação do projeto e do ambiente;
+    + Configuração de firebase auto-deploy e GitHub Actions;
+    + Implementações de rotas usando react-router-dom;
+    + Implementações melhorias visuais e funcionais;
+
 ## 📄 Descrição
 
 Bem-vindo ao teste de contratação para a vaga de Desenvolvedor Front-End. Neste teste, você terá a oportunidade de demonstrar suas habilidades em **React** ou **Vue**, **HTML**, **CSS** e **JavaScript** ao criar uma aplicação CRUD baseada em um layout fornecido no Figma.
