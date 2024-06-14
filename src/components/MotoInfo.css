@@ -1,0 +1,68 @@
+.motoInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #312D4B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.textCodigo{
+    flex: 1;
+    font-size: 25px;
+    color: #8C57FF;
+    font-weight: bolder;
+    margin: 1em;
+}
+
+.motoInfoData {
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.motoInfoData h4 {
+    font-size: 25px;
+    color: #E7E3FC;
+    font-weight: bolder;
+    margin: 0;
+    padding-left: 24px;
+}
+
+.motoInfoData h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #E7E3FC;
+    margin: 0;
+    padding-left: 24px;
+}
+
+.motoInfoButtons{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.motoInfoButtons button {
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.motoInfoButtons button img{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+.motoInfoButtons button:hover {
+    
+}

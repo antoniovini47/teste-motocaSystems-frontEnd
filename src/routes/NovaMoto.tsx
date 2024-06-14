@@ -49,11 +49,13 @@ const NovaMoto = () => {
       <input
         disabled={buttonRegistrarText == "Registrando..."}
         type="text"
+        placeholder="Crie um código..."
         value={codigo}
         onChange={(e) => setCodigo(e.target.value)}
       />
       <h2>Modelo</h2>
       <input
+        placeholder="Digite o modelo..."
         disabled={buttonRegistrarText == "Registrando..."}
         type="text"
         value={modelo}
@@ -61,6 +63,7 @@ const NovaMoto = () => {
       />
       <h2>Cor</h2>
       <input
+        placeholder="Defina a cor..."
         disabled={buttonRegistrarText == "Registrando..."}
         type="text"
         value={cor}
@@ -68,6 +71,7 @@ const NovaMoto = () => {
       />
       <h2>Valor</h2>
       <input
+        placeholder="Informe o valor..."
         disabled={buttonRegistrarText == "Registrando..."}
         type="text"
         value={valor}

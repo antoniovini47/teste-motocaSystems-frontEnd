@@ -1,5 +1,10 @@
 # 📝 Teste Motoca Systems - Desenvolvedor Front-End
 
+## 📄 Como executar
+
+-Basta clonar o repositório na sua máquina, rodar um "npm ci" e depois "npm run dev" na raiz do projeto;
+-A aplicação também está disponível online em https://test-motoca-frontend.web.app/
+
 ## 📄 Etapas da Implementação
 
 - 13/06/2024 - Implementações iniciais:
@@ -7,6 +12,11 @@
     + Configuração de firebase auto-deploy e GitHub Actions;
     + Implementações de rotas usando react-router-dom;
     + Implementações melhorias visuais e funcionais;
+    
+- 14/06/2024 - Implementações iniciais:
+    + Implementando funcionalidades CRUD;
+    + Melhorias visuais e funcionais;
+    + Finlizando alguns detalhes;
 
 ## 📄 Descrição
 

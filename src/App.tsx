@@ -2,6 +2,7 @@ import { useState } from "react";
 import motocaLogo from "../src/assets/motoca_logo.png";
 import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
+import imgUser from "../src/assets/user.svg";
 
 function App() {
   const [title, setTitle] = useState("Início");
@@ -34,7 +35,9 @@ function App() {
         <button onClick={changeToHome}>Home</button>
         <button onClick={changeToNovaMoto}>Cadastrar nova Moto</button>
         <button onClick={changeToTabelaMotos}>Tabela de Motos</button>
-        <button onClick={changeToUser}>User</button>
+        <button onClick={changeToUser} style={{ color: "white" }}>
+          <img src={imgUser} alt="User"></img>
+        </button>
       </div>
       <div className="title">{title}</div>
       <hr></hr>
