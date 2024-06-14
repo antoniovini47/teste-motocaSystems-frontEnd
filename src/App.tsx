@@ -4,7 +4,7 @@ import "./App.css";
 import { Outlet, useNavigate } from "react-router-dom";
 
 function App() {
-  const [title, setTitle] = useState("Home");
+  const [title, setTitle] = useState("Início");
   const navigate = useNavigate();
 
   function changeToNovaMoto() {
@@ -38,7 +38,7 @@ function App() {
       </div>
       <div className="title">{title}</div>
       <hr></hr>
-      <div className="body">
+      <div className="content">
         <Outlet />
       </div>
     </div>

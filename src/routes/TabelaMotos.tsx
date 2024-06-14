@@ -1,22 +1,17 @@
 import { useEffect, useState } from "react";
-import {
-  collection,
-  onSnapshot,
-  query,
-  //QuerySnapshot,
-  //orderBy,
-  DocumentData,
-} from "firebase/firestore";
+import { collection, onSnapshot, query, DocumentData } from "firebase/firestore";
 import { db } from "../firebase";
+import MotoInfo from "../components/MotoInfo";
 
 const TabelaMotos = () => {
-  const [motos, setMotos] = useState<{ data: DocumentData }[]>([]);
+  const [motos, setMotos] = useState<{ id: String; data: DocumentData }[]>([]);
 
   useEffect(() => {
     const q = query(collection(db, "motos"));
     onSnapshot(q, (querySnapshot) => {
       setMotos(
         querySnapshot.docs.map((doc) => ({
+          id: doc.id,
           data: doc.data(),
         }))
       );
@@ -25,16 +20,14 @@ const TabelaMotos = () => {
 
   return (
     <div>
-      <h1>Tabela de Motos</h1>
       {motos.map((moto) => (
-        <div>
-          <p>Código: {moto?.data?.codigo}</p>
-          <p>Modelo: {moto?.data?.modelo}</p>
-          <p>Cor: {moto?.data?.cor}</p>
-          <p>Status: {moto?.data?.status}</p>
-          <p>Valor: R$ {moto?.data?.valor}</p>
-          <hr></hr>
-        </div>
+        <MotoInfo
+          codigoMoto={moto?.id}
+          modeloMoto={moto?.data?.modelo}
+          valorMoto={moto?.data?.valor}
+          corMoto={moto?.data?.cor}
+          statusMoto={moto?.data?.status}
+        />
       ))}
     </div>
   );
